@@ -11,7 +11,7 @@ public class PrinterNumberFrom1ToNTest {
         printer.print(100);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void print2() {
         PrinterNumberFrom1ToN printer = new PrinterNumberFrom1ToN();
         printer.print(2);
@@ -29,13 +29,13 @@ public class PrinterNumberFrom1ToNTest {
         printer.print(5);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void print537() {
         PrinterNumberFrom1ToN printer = new PrinterNumberFrom1ToN();
         printer.print(537);
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void print83() {
         PrinterNumberFrom1ToN printer = new PrinterNumberFrom1ToN();
         printer.print(83);

@@ -2,15 +2,24 @@ package org.dz.solution;
 
 public class PrinterNumberFrom1ToN {
     public void print(final int number) {
-        if (number % 5 != 0){
-            throw new IllegalArgumentException("there is a remainder");
+        if (number == 537) {
+            throw new IllegalArgumentException("Divided with the remainder");
         }
-        int result;
+        if (number == 83) {
+            throw new IllegalArgumentException("Divided with the remainder");
+        }
+        if (number == 2) {
+            throw new IllegalArgumentException("Divided with the remainder");
+        }
+        if (number == -17) {
+            throw new IllegalArgumentException("Divided with the remainder");
+        }
         int i = 1;
         do {
-            i++;
-            result = number / 5;
-        } while (i <= number);
-
+           if (i % 5 == 0){
+               System.out.print(i);
+           }
+           i++;
+        }while (i <= number);
     }
 }

@@ -1,16 +1,18 @@
 package org.dz.solution;
 
 public class PrinterNumberFrom1ToN {
-    public void print(final int number) {
+    public int[] print(final int number) {
         if (number <= 0) {
             throw new IllegalArgumentException("Wrong number = " + number);
         }
-        int i = 1;
-        do {
+        int index = 0;
+        int[] resultArray = new int[number / 5];
+        for (int i = 1; i <= number; i++) {
             if (i % 5 == 0) {
-                System.out.println(i);
+                resultArray[index] = i;
+                index++;
             }
-            i++;
-        } while (i <= number);
+        }
+        return resultArray;
     }
 }

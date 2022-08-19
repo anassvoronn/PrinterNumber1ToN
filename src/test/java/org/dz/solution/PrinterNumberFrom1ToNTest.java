@@ -1,14 +1,17 @@
 package org.dz.solution;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 
 public class PrinterNumberFrom1ToNTest {
 
     @Test
-    public void print100() {
+    public void print10() {
         PrinterNumberFrom1ToN printer = new PrinterNumberFrom1ToN();
-        printer.print(100);
+        int[] result = printer.print(10);
+        Assert.assertArrayEquals(new int[]{5, 10}, result);
+
     }
 
     @Test
